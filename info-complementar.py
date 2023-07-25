@@ -1,4 +1,4 @@
-def router ():
+def router (): # Caso bridge
     equipamento = input('Marca da ONU: ')
     serial = input('Serial do equipamento: ')
     slot = int(input('Slot: '))
@@ -10,7 +10,7 @@ def router ():
     print('Informação complementar: ')
     print(f'{equipamento.capitalize()} Router || SN: {serial.upper()} || Slot: {slot} Porta: {porta} ID: {id} || SSID: {ssid} - Senha: {senha}')
 
-def bridge():
+def bridge(): # Caso router
     equipamento = input('Marca da ONU em bridge: ')
     serial = input('Serial do equipamento: ')
     router = input('Marca/modelo do roteador: ')
@@ -23,6 +23,7 @@ def bridge():
     print('Informação complementar: ')
     print(f'{equipamento.capitalize()} Bridge || SN: {serial.upper()} || Autentica no {router.capitalize()} || Slot: {slot} Porta: {porta} ID: {id} || SSID: {ssid} - Senha: {senha}')
 
+# Início
 
 tipo = int(input('Digite:\n[1] Router\n[2] Bridge\n\n'))
 
