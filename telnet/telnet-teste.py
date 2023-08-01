@@ -1,6 +1,7 @@
 import telnetlib
+import olt
 
-HOST = "172.20.2.170"
+HOST = olt.olt
 user = input ('Username: ')
 password = input('Password: ')
 
