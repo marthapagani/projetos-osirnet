@@ -24,3 +24,5 @@ if tipo == 1:
     redir()
 else:
     abertura()
+
+#TODO tratamento de erros

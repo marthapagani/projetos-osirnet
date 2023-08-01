@@ -29,3 +29,5 @@ tipo = int(input('Digite:\n[1] Router\n[2] Bridge\n\n'))
 
 if tipo == 1:
     router()
+
+#TODO tratamento de erros
