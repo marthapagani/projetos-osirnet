@@ -27,6 +27,7 @@ def telefonia(): # Caso tenha telefonia
     tipo = int(input("Selecione: \n[1] Telefonia Osirnet ou Toptech\n[2] Telefonia Tchenet\n\n"))
     if tipo == 1:
         iptel = input('IP da telefonia: ')
+
     numtel = int(input('Número do telefone: '))
     senhatel = int(input('Senha da telefonia: '))
     if tipo == 2:
