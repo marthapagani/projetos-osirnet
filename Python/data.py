@@ -21,10 +21,14 @@ def diferenca_horas(hora1, hora2, data1, data2):
         print("Formato inválido. Certifique-se de usar o formato 'DIA/MÊS/ANO HH:mm'.")
 
 if __name__ == "__main__":
-    data_inicio = input("Data de início (formato DIA/MÊS/ANO): ")
-    hora_inicio = input("Hora de início (formato HH:mm): ")
-    
-    data_fim = input("Data de término (formato DIA/MÊS/ANO): ")
-    hora_fim = input("Hora de término (formato HH:mm): ")
 
-    diferenca_horas(hora_inicio, hora_fim, data_inicio, data_fim)
+    vezes = int(input("Quantas vezes precisa que esse código se repita?"))
+
+    for _ in range(vezes):
+        data_inicio = input("Data de início (formato DIA/MÊS/ANO): ")
+        hora_inicio = input("Hora de início (formato HH:mm): ")
+        
+        data_fim = input("Data de término (formato DIA/MÊS/ANO): ")
+        hora_fim = input("Hora de término (formato HH:mm): ")
+
+        diferenca_horas(hora_inicio, hora_fim, data_inicio, data_fim)
